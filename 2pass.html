@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 PASS ASSEMBLER</title>
+    <link rel="stylesheet" href="2passstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div id="pass1" class="pass1">
+            <h1>PASS 1</h1>
+            <h5>SOURCE CODE CONVERTED TO INTERMEDIATE FILE</h5>
+            <input type="file" id="Input_file" />
+            <h3>INPUT FILE</h3>
+            <pre id="output_input"></pre>
+            <input type="file" id="Optab_file" />
+            <h3>OPTAB FILE</h3>
+            <pre id="output_optab"></pre>
+            <button disabled id="startButton">Start</button>
+            <button id="downloadIntermediate" style="display:none;">Download Intermediate File</button>
+            <button id="downloadSymtab" style="display:none;">Download Symtab</button>
+            <h3>INTERMEDIATE FILE</h3>
+            <pre id="inter_file"></pre>
+            <h3>SYMTAB</h3>
+            <pre id="symtab"></pre>
+            
+        </div>
+        <div id="pass2" class="pass2">
+            <h1>PASS 2</h1>
+            <h5>INTERMEDIATE FILE CONVERTED TO MACHINE CODE</h5>
+            <pre id="output_pass2"></pre>
+            <h2>HEADER</h2>
+            <pre id="header-record"></pre>
+            <h2>TEXT</h2>
+            <pre id="text-record"></pre>
+            <h2>END</h2>
+            <pre id="end-record"></pre>
+        </div>
+    </div>
+    <script src="2passjs.js"></script>
+</body>
+</html>
